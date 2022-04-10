@@ -1,0 +1,348 @@
+
+
+
+#title {
+    font-family: 'Dancing Script';font-size: 55px;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    margin: 0px;
+}
+
+body {
+    background: url(/jerkyimage) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+  }
+
+html { 
+    margin: 0;
+    padding: 0;
+  
+}
+
+#welcome {
+    font-family: 'Frank Ruhl Libre', serif;;
+    padding-top: 0.5%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    margin-top: 0.7%;
+    margin-left: 0.5%;
+    margin-bottom: 0;
+    font-size: 22px;
+}
+
+.whitepage {
+    background-color: white;
+    width:92%;
+    margin-left: 4%;
+    margin-bottom: 4%;
+    border-radius: 10px;
+    overflow: hidden;
+    
+
+}
+
+form {
+    
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     justify-content: center;
+     align-items: stretch;
+     align-content: stretch;
+}
+
+.minititle {
+    font-family: 'Frank Ruhl Libre', serif;;
+    margin:0%;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Frank Ruhl Libre', serif;
+    margin: 0;
+    font-size: 27px;;
+}
+
+.checkboxbox {
+    
+    list-style-type: none;
+    background-color:rgb(248, 247, 247);
+    width: 14.7%;
+    margin:1%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 1%;
+    padding-top: 0.5%;
+    border-radius: 10px;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: stretch;
+	align-content: space-around;
+
+    font-size: 18px;
+}
+
+.checkboxbox2 {
+    list-style-type: none;
+    background-color:rgb(248, 247, 247);
+    width: 18%;
+    margin:1%;
+    margin-top: 0%;
+    padding: 1%;
+    padding-top: 0.5%;
+    border-radius: 10px;
+   
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: stretch;
+	align-content: space-around;
+
+    font-size: 18px;
+}
+
+
+form {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: list-item;
+    font-size: 18px;
+}
+
+[type="checkbox"], [type="radio"] {
+    height:15px; 
+    width:15px;
+
+}
+
+#objectives {
+    
+    display: flex;
+    justify-content: center;
+    
+}
+
+#buttonDiv {
+    margin:-18px;
+    background-color: rgb(255, 255, 255);
+    height: 110px;
+    
+
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: stretch;
+	align-content: space-around;
+
+}
+
+#resetButton {
+    border: none;
+    font-size: 30px;
+    height: 45px;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 10px;
+    background-color: rgb(161, 24, 0);
+    color: white;
+}
+
+#submitButton {
+    border: none;
+    margin-bottom: -9px;
+    font-size: 30px;
+    height: 45px;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 10px;
+    background-color: rgb(28, 68, 34);
+    color: white;
+}
+
+#submitButton2 {
+    border: none;
+    font-size: 30px;
+    height: 45px;
+    width: 224px;
+    border-radius: 10px;
+    background-color: rgb(28, 68, 34);
+    color: white;
+}
+
+#ingredientslisttitle {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 0.8%;
+}
+
+#listptag {
+    font-family: 'Frank Ruhl Libre', serif;;
+    margin-top: 0.4%;
+    margin-left: 0.5%;
+    margin-bottom: 0;
+    font-size: 25px;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+
+}
+
+#sliderdiv {
+    background-color:rgb(248, 247, 247);
+    width: auto;
+    height: 50px;
+    margin: 1%;
+    margin-bottom: 1.2%;
+    border-radius: 8px;
+    padding: 0.2%;
+
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-around;
+}
+
+#slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 350px; /* Full-width */
+    height: 7px; /* Specified height */
+    border-radius: 20px;
+    background: #5f5f5f; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .3s; /* 0.2 seconds transition on hover */
+    transition: opacity .3s;
+}
+
+#meatmanualinput {
+    width: 90px;
+    height: 37px;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+#meatlbs {
+    font-size: 38px;
+}
+
+#listdiv {
+    background-color: rgb(255, 255, 255);
+    font-size: 27px;
+
+    display: flex;
+	flex-direction: row;
+	flex-wrap:nowrap;
+	justify-content:space-around;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+#listcolumndivbase {
+    background-color: rgb(248, 247, 247);
+    border-radius: 10px;
+    margin-bottom: 1.2%;
+    padding: 1%;
+    padding-top: 0.6%;
+    
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: space-around;
+}
+
+#listcolumndivpost {
+    background-color: rgb(248, 247, 247);
+    border-radius: 10px;
+    padding: 1%;
+    padding-top: 0.6%;
+    margin-bottom: 1.2%;
+
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: space-around;
+}
+
+#preparationdiv {
+    background-color: rgb(248, 247, 247);
+    border-radius: 10px;
+    padding: 1%;
+    padding-top: 0.6%;
+    margin-bottom: 1.2%;
+
+}
+
+.listItem {
+    font-family: 'Frank Ruhl Libre', serif;;
+    width: 100%;
+    text-align: justify;
+    margin: 0;
+}
+
+#listcolumndivbase:empty, #listcolumndivpost:empty, #preparationdiv:empty {
+    display: none;
+}
+
+#recipewelcome {
+    font-family: 'Frank Ruhl Libre', serif;;
+    text-align: center;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    margin-top: 0%;
+    margin-left: 0.5%;
+    margin-bottom: 1%;
+    font-size: 25px;
+}
+
+#recipediv {
+
+    background-color:rgb(255, 255, 255);
+    margin-top: 0%;
+    padding: 0.6%;
+
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: flex-start;
+}
+
+.recipeItem {
+    max-width: 30.13%;
+    min-width: 30.13%;
+    height: 460px;
+    background-color:rgb(248, 247, 247);
+    border-radius: 10px;
+    font-size: 25px;
+    margin:0.6%;
+    padding: 1%;
+}
+
+.stepnumber {
+    margin: 3%;
+    margin-top: 0%;
+    margin-left: 0%;
+}
+
+.steptext {
+    margin: 0%;
+}

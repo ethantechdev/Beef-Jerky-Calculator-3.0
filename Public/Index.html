@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beef Jerky Calculator</title>
+    <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles">
+</head>
+<body>
+    <h1 id="title">
+        The Beef Jerky Calculator
+    </h1>
+
+    <div class="whitepage">
+        <p id="welcome">Welcome to the Beef Jerky Calculator. Enter in the desired characteristics of your Beef Jerky (Smoky, Spicy, Sweet, etc), then select the items you wish you create the Beef Jerky with. The Beef Jerky Calculator will then determine the amount of ingredients you need to work with in order to match your desired jerky characteristics. Afterwards, a full-paged instructional recipe will be displayed.</p>
+        <h1 class="minititle">Objectives</h1>
+        <div id="objectives">
+            <div class="checkboxbox"><h2>Smokiness</h2>
+                <form id="smokinessform" name="smokiness">
+                    <input name="smokiness" value="Genuine" type="radio">
+                    <label>Genuine</label><br>
+                    <input name="smokiness" value="Heavy" type="radio">
+                    <label>Heavy</label><br>
+                    <input name="smokiness" value="Light" type="radio">
+                    <label>Light</label><br>
+                    <input name="smokiness" value="None" type="radio">
+                    <label>None</label>
+                </form>
+            </div>
+
+            <div class="checkboxbox"><h2>Spiciness</h2>
+                <form id="spicinessform" name="spiciness">
+                    <input name="spiciness" value="Hellfire" type="radio">
+                    <label>Hellfire</label><br>
+                    <input name="spiciness" value="Scorching" type="radio">
+                    <label>Scorching</label><br>
+                    <input name="spiciness" value="White" type="radio">
+                    <label>White</label><br>
+                    <input name="spiciness" value="None" type="radio">
+                    <label>None</label>
+                </form>
+            </div>
+
+            <div class="checkboxbox"><h2>Saltiness</h2>
+                <form id="saltinessform" name="saltiness">
+                    <input name="saltiness" value="Cured" type="radio">
+                    <label>Cured</label><br>
+                    <input name="saltiness" value="Moderate" type="radio">
+                    <label">Moderate</label><br>
+                    <input name="saltiness" value="Light" type="radio">
+                    <label>Light</label><br>
+                    <input name="saltiness" value="None" type="radio">
+                    <label>None</label>
+                </form>
+            </div>
+
+
+            <div class="checkboxbox"><h2>Sweetness</h2>
+                <form id="sweetnessform" name="sweetness">
+                    <input name="sweetness" value="Sweet" class="lowshelf" type="radio">
+                    <label>Sweet</label><br>
+                    <input name="sweetness" value="Mild" class="lowshelf" type="radio">
+                    <label>Mild</label><br>
+                    <input name="sweetness" id="nosweetness" value="None" type="radio">
+                    <label>None</label><br>
+                    <br>
+                </form>
+            </div>
+
+            <div class="checkboxbox"><h2>Toughness</h2>
+                <form id="toughnessform" name="toughness">
+                    <input name="toughness" value="Tough" type="radio">
+                    <label>Tough</label><br>
+                    <input name="toughness" value="Standard" type="radio">
+                    <label>Standard</label><br>
+                    <input name="toughness" value="Tender" type="radio">
+                    <label>Tender</label>
+                    <br>
+                    <br>
+                </form>
+            </div>
+
+            <div class="checkboxbox"><h2>Shelf Life</h2>
+                <form id="shelflifeform" name="shelflife">
+                    <input name="shelflife" value="Years++" type="radio">
+                    <label>Years++</label><br>
+                    <input name="shelflife" value="~Month" type="radio">
+                    <label>~Month</label><br>
+                    <input name="shelflife" value="2 Weeks" type="radio">
+                    <label>2 Weeks</label><br>
+                    <input name="shelflife" value="Don't Care" type="radio">
+                    <label>Don't Care</label>
+                </form>
+            </div>
+
+            <div class="checkboxbox"><h2>Appliance</h2>
+                <form id="applianceform" name="appliance">
+                    <input name="appliance" value="Smoker,1,Medium" class="smoky" type="radio">
+                    <label>Smoker</label><br>
+                    <input name="appliance" value="Dehydrator,1,Medium" class="notsmoky" type="radio">
+                    <label>Dehydrator</label><br>
+                    <input name="appliance" value="Oven,1,Medium" class="notsmoky" type="radio">
+                    <label>Oven</label><br>
+                    <input name="appliance" value="Sun Dry Sheet,1,Medium" class="notsmoky" type="radio">
+                    <label>Sun Dry</label>
+                </form>
+            </div>
+        </div>
+
+        <h1 class="minititle">Ingredients</h1>
+        <div id="objectives">
+            <div class="checkboxbox2"><h2>Meat</h2>
+                <form id="meatform" name="meat">
+                    <input name="meat" value="Beef,1,lbs" type="radio">
+                    <label>Beef</label><br>
+                    <input name="meat" value="Deer or other Cervid,1,lbs" type="radio">
+                    <label>Deer or other Cervid</label><br>
+                    <input name="meat" value="Fish,1,lbs" type="radio">
+                    <label>Fish</label><br>
+                    <input name="meat" value="Turkey,1,lbs" type="radio">
+                    <label>Turkey</label><br>
+                    <input name="meat" value="Pork,1,lbs" class="lowshelf" type="radio">
+                    <label>Pork</label><br>
+                    <input name="meat" value="Bacon,1,lbs" class="lowshelf" type="radio">
+                    <label>Bacon</label><br>
+                    <input name="meat" value="Ham,1,lbs" class="lowshelf" type="radio">
+                    <label>Ham</label><br>
+                    <input name="meat" value="Ground meats,1,lbs" class="tender lowshelf" type="radio">
+                    <label>Ground meats</label><br>
+                    <br>
+                    <br>
+                </form>
+            </div>
+
+            <div class="checkboxbox2"><h2>Base Ingredients</h2>
+                <form id="baseingredientsform" name="baseingredients">
+                    <input name="baseingredients" value='Soy Sauce,0.25,Cups' class="salty" type="checkbox">
+                    <label>Soy Sauce</label><br>
+                    <input name="baseingredients" value="Tamari Sauce,0.25,Cups" class="salty" type="checkbox">
+                    <label>Tamari Sauce</label><br>
+                    <input name="baseingredients" value="Coconut aminos,0.25,Cups" class="salty" type="checkbox">
+                    <label>Coconut aminos</label><br>
+                    <input name="baseingredients" value="Teriyaki Sauce,0.25,Cups" class="salty" class="lowshelf" type="checkbox">
+                    <label>Teriyaki Sauce</label><br>
+                    <input name="baseingredients" value="Worcestershire sauce,0.2,Cups" type="checkbox">
+                    <label>Worcestershire sauce</label><br>
+                    <input name="baseingredients" value="Liquid smoke,1,teaspoons" class="smoky" type="checkbox">
+                    <label>Liquid smoke</label><br>
+                    <input name="baseingredients" value="Apple cider vinegar,1,Tablespoons" class="tender" type="checkbox">
+                    <label>Apple cider vinegar</label><br>
+                    <input name="baseingredients" value="Lemon / Lime Juice,1.5,teaspoons" class="tender" type="checkbox">
+                    <label>Lime Juice & Zest</label><br>
+                    <input name="baseingredients" value="Cola / Soft Drink,1,Cans" class="tender" class="lowshelf" type="checkbox">
+                    <label>Cola / Soft Drink</label><br>
+                    <input name="baseingredients" value="Wine / Mirin / Whisky,0.25,Cups" class="tender" type="checkbox">
+                    <label>Wine / Mirin / Whisky</label>
+                </form>
+            </div>
+
+            <div class="checkboxbox2"><h2>Post ingredients</h2>
+                <form id="postingredientsform" name="postingredients">
+                    <input name="postingredients" value="Salt,1,Tablespoons" class="salty" type="checkbox">
+                    <label>Salt</label><br>
+                    <input name="postingredients" value="Black Pepper,1,teaspoons" type="checkbox">
+                    <label>Black Pepper</label><br>
+                    <input name="postingredients" value="Garlic Powder/Paste,2,teaspoons" type="checkbox">
+                    <label>Garlic Powder/Paste</label><br>
+                    <input name="postingredients" value="Onion Powder/Paste,2,teaspoons" type="checkbox">
+                    <label>Onion Powder/Paste</label><br>
+                    <input name="postingredients" value="Paprika,1,Tablespoons" type="checkbox">
+                    <label>Paprika</label><br>
+                    <input name="postingredients" value="Barbeque Sauce,1,Tablespoons" class="lowshelf" type="checkbox">
+                    <label>Barbeque Sauce</label><br>
+                    <input name="postingredients" value="MSG,1,teaspoons" type="checkbox">
+                    <label>MSG</label><br>
+                    <input name="postingredients" value="Meat Tenderizer,0.33,teaspoon" class="tender" type="checkbox">
+                    <label>Meat Tenderizer</label><br>
+                    <input name="postingredients" value="Powdered Ginger,0.75,teaspoons" type="checkbox">
+                    <label>Powdered Ginger</label><br>
+                    <br>
+
+                </form>
+            </div>
+
+            
+
+            <div class="checkboxbox2"><h2>Spice</h2>
+                <form id="spiceform" name="spice">
+                    <input name="spice" value="Tabasco Sauce,1,Tablespoons" class="spicy" type="checkbox">
+                    <label>Tabasco Sauce</label><br>
+                    <input name="spice" value="Chili Powder/Paste,1,Tablespoons" class="spicy" type="checkbox">
+                    <label>Chili Powder/Paste</label><br>
+                    <input name="spice" value="Red Pepper Flakes,1.3,Tablespoons" class="spicy" type="checkbox">
+                    <label>Red Pepper Flakes</label><br>
+                    <input name="spice" value="Jalapeno Peppers,0.7,Medium Peppers" class="spicy" type="checkbox">
+                    <label>Jalapeno Peppers</label><br>
+                    <input name="spice" value="Habanero Peppers,0.23,Medium Peppers" class="spicy" type="checkbox">
+                    <label>Habanero Peppers</label><br>
+                    <input name="spice" value="Ghost Peppers,0.076,Medium Peppers" class="spicy" type="checkbox">
+                    <label>Ghost Peppers</label><br>
+                    <input name="spice" value="Carolina Reaper Peppers,0.046,Medium Peppers" class="spicy" type="checkbox">
+                    <label>Carolina Reaper Peppers</label><br>
+                    <input name="spice" value="Pure Capsaicin powder,0.05,teaspoon" class="spicy" type="checkbox">
+                    <label>Pure Capsaicin powder</label><br>
+                    <br>
+                </form>
+            </div>
+
+            <div class="checkboxbox2" id="sugarcheckbox"><h2>Sugar</h2>
+                <form id="sugarform" name="sugar">
+                    <input name="sugar" value="Granulated Sugar,1.6,Tablespoons" class="sweet lowshelf" type="checkbox">
+                    <label>Granulated Sugar</label><br>
+                    <input name="sugar" value="Brown Sugar,1.8,Tablespoons" class="sweet lowshelf" type="checkbox">
+                    <label>Brown Sugar</label><br>
+                    <input name="sugar" value="Molasses,2,Tablespoons" class="sweet lowshelf" type="checkbox">
+                    <label>Molasses</label><br>
+                    <input name="sugar" value="Dark Corn Syrup,2.4,Tablespoons" class="sweet lowshelf" type="checkbox">
+                    <label>Dark Corn Syrup</label><br>
+                    <input name="sugar" value="Honey,1.2,Tablespoons" class="sweet lowshelf" type="checkbox">
+                    <label>Honey</label><br>
+                    <input name="sugar" value="Maple Syrup,1.2,Tablespoons" class="sweet lowshelf" type="checkbox">
+                    <label>Maple Syrup</label>
+                    <br>
+                </form>
+
+                <br>
+                <div id="buttonDiv">
+                    <!-- <br> -->
+                    <button id="resetButton">Reset</button>
+                    <!-- <br> -->
+                    <button id="submitButton">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="whitepage">
+    <h2 id="ingredientslisttitle">Ingredients List</h2>
+    <p id="listptag">On this page, you are greeted with a list of your chosen ingredients. Take the slider (or manually type in) the poundage of starting meat you are working with. The system will automatically update the measurements of each ingredient you need to prepare.</p>
+    <div id="sliderdiv">
+        <h2>Meat Quantity:</h2>
+        <input type="range" min="0.250" max="15" value="1" step="0.250" id="slider">
+        <input id="meatmanualinput" value="1" type="text">
+        <p id="meatlbs">(lbs)</p>
+        <button id="submitButton2" type="submit">Print Recipe</button>
+    </div>
+
+    <div id="listdiv">
+        <div id="listcolumndivbase"></div>
+
+        <div id="listcolumndivpost"></div>
+
+        <div id="preparationdiv"></div>
+
+    </div>
+</div>
+
+<div class="whitepage">
+    <h1 class="minititle" style="margin: 0.8%">Recipe</h1>
+    <p id="recipewelcome">This is the Recipe page. A full step recipe for the desired Jerky will be listed below.</p>
+    <div id="recipediv">
+    </div>
+</div>
+
+
+    <script src="/javascript"></script>
+</body>
+</html>
